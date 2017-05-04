@@ -1,0 +1,27 @@
+ul{
+        list-style: none;
+    }
+    ul li{
+        float: left;
+        width: 175px;
+        text-align: center;
+        line-height: 20px;
+    }
+    ul li a{
+        display: block;
+        padding: 5px 10px;
+		border-radius: 20px;
+        color: white;
+        background-color: rgba(0,0,0,0.6);
+        text-decoration: none;
+    }
+    ul li a:hover{
+        color: #fff;
+        background: #939393;
+    }
+    ul li ul{
+        display: none;
+    }
+    ul li:hover ul{
+        display: block; /* display the dropdown */
+}

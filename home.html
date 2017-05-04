@@ -1,0 +1,87 @@
+<!DOCTYPR html>
+<html>
+<head>
+	<script type="text/javascript">
+
+		var image1=new Image()
+		image1.src="images/1.jpg"
+		var image2=new Image()
+		image2.src="images/2.jpg"
+		var image3=new Image()
+		image3.src="images/3.jpg"
+		var image4=new Image()
+		image4.src="images/4.jpg"
+		var image5=new Image()
+		image5.src="images/5.jpg"
+		var image6=new Image()
+		image6.src="images/6.jpg"
+		var image7=new Image()
+		image7.src="images/7.jpg"
+
+	</script>
+
+<style>
+.layout{
+background-color: rgba(0,0,0,0.6);
+position: absolute;
+padding: 15px;
+color: white;
+margin-right: 10px;
+float: left;
+}
+.child_div_1{
+    float:right;
+    margin-left:20px;
+	width: 500px;
+	height: 450px;
+}
+.child_div_2{
+    float:left;
+	width: 500px;
+	height: 450px;
+	margin-top: 40px;
+}
+@font-face {
+    font-family: alsscrp;
+    src: url(Fonts/alsscrp.ttf) format("truetype");
+}
+#customfont_1 { 
+    font-family: alsscrp;
+	font-weight: bold;
+	font-size: 30px;
+	font-color: white;
+}
+#customfont_2 { 
+    font-family: century gothic;
+	font-weight: bold;
+	font-size: 20px;
+	font-color: black;
+}
+</style>
+</head>
+<body>
+	<div class="layout"><img src="1.jpg" name="slide" width="780px" height="450px">
+	<script type="text/javascript">
+
+		var step=1
+		function slideit(){
+			document.images.slide.src=eval("image"+step+".src")
+			if(step<7)
+				step++
+			else
+				step=1
+			setTimeout("slideit()",2500)
+		}
+		slideit()
+
+	</script>
+	<div class="child_div_1" id="customfont_1" style="float: right;">"The first essential for the Child's development is concentration. The Child who concentrates is immensely happy."
+	<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-	Dr. Maria Montessori</p>
+	<p> "The first three years of life forms the foundation for the rest of our lives." </p>
+	<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-	Dr. Maria Montessori</p>
+	<p>"Hands are the instruments of learning"</p>
+	<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-	Dr. Maria Montessori</p>
+	</div>
+	</div>
+</body>	
+</html>
